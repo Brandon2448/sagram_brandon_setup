@@ -1,7 +1,7 @@
 while True:
     print("Light Level = " + (input.light_level()))
-    if input.light_level() > 10:
-        music.pew_pew.play()
+    if input.light_level() > 30:
+        music.pew_pew.play_until_done()
     else:
-        light.set_all(light.rgb(255, 255, 255))
+        light.clear()
         

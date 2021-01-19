@@ -1,9 +1,9 @@
 while (true) {
     console.log("Light Level = " + input.lightLevel())
-    if (input.lightLevel() > 10) {
-        music.pewPew.play()
+    if (input.lightLevel() > 30) {
+        music.pewPew.playUntilDone()
     } else {
-        light.setAll(light.rgb(255, 255, 255))
+        light.clear()
     }
     
 }
